@@ -20,5 +20,12 @@ let x = setInterval(()=>{
     minute.innerHTML = minutes;
     second.innerHTML = seconds;
 
+    if(distance<0){
+        day.innerHTML = '00';
+        hour.innerHTML = '00';
+        minute.innerHTML = '00';
+        second.innerHTML = '00';
+    }
+
     
 },1000) 
